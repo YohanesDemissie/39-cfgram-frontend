@@ -22,7 +22,7 @@ export const signupRequest = user => dispatch => {
         throw e //I'm pretty sure e is supposed to be Error
       }
   })
-}
+};
 
 export const signinRequest = user => dispatch => {
   return superagent.get(`${__API_URL__}/login`)
