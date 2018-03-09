@@ -4,7 +4,7 @@ const validatePicture = picture => {
 
   let {_id, url, description, owner} = picture;
   if(!_id || !url || !description || !owner) //validation first
-  throw new Error ('No Content');
+    throw new Error ('No Content');
 };
 
 export default (state = [], {type, payload}) => {  //we want to pass in state and action for export
