@@ -1,14 +1,14 @@
-import superagent from 'superagent'
+import superagent from 'superagent';
 
 export const tokenSet = token => ({
   type: 'TOKEN_SET',
   payload: token,
-})
+});
 
 export const tokenDelete = () => {
   delete localStorage.token
   return {type: 'TOKEN_DELETE'}
-}
+};
 
 export const signupRequest = user => dispatch => {
   return superagent.post(`${__API_URL__}/signup`) //POST NEW ACCOUNT INTO OUR DATABASE
@@ -22,10 +22,10 @@ export const signupRequest = user => dispatch => {
         throw e //I'm pretty sure e is supposed to be Error
       }
   })
-}
+};
 
 export const signinRequest = user => dispatch => {
   return superagent.get(`${__API_URL__}/login`)
   .auth(user.username, user.password) //authorizes/validates usersname and password
   .then(response => dispatch(tokenSet(response.text))) 
-}
+};
