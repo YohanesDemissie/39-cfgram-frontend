@@ -11,9 +11,6 @@
     "heroku-postbuild": "webpack -p --progress",
     "start": "node index.js"
   },
-  "engines": {
-    "node": "9.3.0"
-  },
   "jest": {
     "globals": {
       "__DEBUG__": false,
