@@ -1,15 +1,13 @@
 {
-  "name": "36-d18",
+  "name": "cf-gram-frontend",
   "version": "1.0.0",
-  "description": "",
+  "description": "codefellows-gram-frontend",
   "main": "webpack.config.js",
   "scripts": {
-    "bundle": "webpack",
+    "build": "webpack",
     "watch": "webpack-dev-server --inline --hot",
     "test": "jest",
-    "test:watch": "jest --watchAll",
-    "heroku-postbuild": "webpack -p --progress",
-    "start": "node index.js"
+    "test:watch": "jest --watchAll"
   },
   "engines": {
     "node": "9.3.0"
@@ -18,7 +16,7 @@
     "globals": {
       "__DEBUG__": false,
       "process.env": {
-        "NODE_ENV": "production"
+        "NODE_ENV": "testing"
       }
     },
     "verbose": true,
@@ -59,5 +57,13 @@
   },
   "dependencies": {
     "express": "^4.16.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YohanesDemissie/39-cfgram-frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YohanesDemissie/39-cfgram-frontend/issues"
+  },
+  "homepage": "https://github.com/YohanesDemissie/39-cfgram-frontend#readme"
 }
