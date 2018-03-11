@@ -1,7 +1,7 @@
 {
-  "name": "36-d18",
+  "name": "cf-gram-front-end",
   "version": "1.0.0",
-  "description": "",
+  "description": "codefellows-gram-frontend",
   "main": "webpack.config.js",
   "scripts": {
     "bundle": "webpack",
@@ -59,5 +59,13 @@
   },
   "dependencies": {
     "express": "^4.16.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YohanesDemissie/39-cfgram-frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YohanesDemissie/39-cfgram-frontend/issues"
+  },
+  "homepage": "https://github.com/YohanesDemissie/39-cfgram-frontend#readme"
 }
