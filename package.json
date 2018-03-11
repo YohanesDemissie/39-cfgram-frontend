@@ -24,7 +24,7 @@
     "coverageDirectory": "./coverage"
   },
   "keywords": [],
-  "author": "Code Fellows, LLC",
+  "author": "Code Fellows, LLC",  
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",
