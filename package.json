@@ -55,7 +55,9 @@
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.16.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YohanesDemissie/39-cfgram-frontend.git"
